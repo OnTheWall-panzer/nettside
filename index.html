@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -117,24 +117,6 @@
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/ehFpymQQYx4?autoplay=1" title="10 Minutes Of Brainrot Memes V8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<script>
-    function changeBackground() {
-        const colors = ["#ff00ff", "#00ffff", "#ffff00", "#111111", "#444444", "#ff5500", "#00ff88"];
-        document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-    }
-
-    // Fetch a random brainrot meme
-    async function fetchRandomMeme() {
-        try {
-            const response = await fetch('https://api.memegen.link/images/random/brainrot.png?watermark=School+Brainrot');
-            const imageUrl = response.url;
-            const memeContainer = document.getElementById('memeContainer');
-            memeContainer.innerHTML = `<img src="${imageUrl}" alt="Random Brainrot Meme">`;
-        } catch (error) {
-            console.error('Error fetching meme:', error);
-        }
-    }
-
-    // Call the function to fetch and
-::contentReference[oaicite:0]{index=0}
- 
+<script src="script.js"></script>
+</body>
+</html>
